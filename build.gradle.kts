@@ -1,6 +1,6 @@
 plugins {
     kotlin("jvm") version "1.8.20"
-    id("info.solidsoft.pitest") version "1.9.0"
+    id("info.solidsoft.pitest") version "1.15.0"
 }
 
 repositories {
@@ -13,10 +13,6 @@ dependencies {
 
 tasks.test {
     useJUnitPlatform()
-}
-
-kotlin {
-    jvmToolchain(8)
 }
 
 pitest {
