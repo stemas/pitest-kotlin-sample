@@ -12,6 +12,6 @@ class HelloWorld {
         val myHashMap = HashMap<String, String>().apply { put("foo", "bar") }
 
         // PITEST: replaced return value with Collections.emptyMap for de/esolutions/pitest/showcase/HelloWorld$Companion::getMyMap → NO_COVERAGE
-        val myMap = mapOf("foo" to "bar")
+        val myMap = mapOf("foo" to "bar", "c" to "d")
     }
 }
